@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* is() pseudo-class function */
+        /*.parent :is(child1, child2, child3) */
+        /* “Inside .content, select h1, h2, or p” */
+        .content :is(h1, h2, p) {
+            color: #f30000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* "Inside .content, select p, a" */
+        .content :is(p, a) {
+            font-size: 18px;
+        }
+
+        /* "Inside .content, select h1, h2, a" */
+        .content :is( h1, h2, a) {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<section class="content">
+  <h1>Main Title</h1>
+  <h2>Sub Title</h2>
+  <p>This is a paragraph.</p>
+  <a href="#">Read more</a>
+</section>
+</body>
+</html>

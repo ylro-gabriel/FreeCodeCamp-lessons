@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Name Card</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .card {
+            background-color: rgb(255, 231, 231);
+            border: solid 1px rgb(177, 86, 86);
+            border-radius: 15px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right:auto ;
+            max-width: 350px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            background-color: rgb(241, 108, 108);
+        }
+
+        img {
+            border-radius: 50%;
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+        p:hover {
+            font-size: 2em;
+            font-weight: bolder;
+            color: rgb(34, 34, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://placehold.co/200" alt="My pic">
+        <h1>My Name</h1>
+        <p>Little something about me</p>
+        <h2>My profession</h2>
+        <h3>My dream profession</h3>
+    </div>
+</body>
+</html>

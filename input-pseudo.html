@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Pseudo Class</title>
+    <style>
+        .gender:checked {
+            accent-color: blue;
+        }
+        .name:required {
+            outline: solid 2px pink;
+        }
+        .email {
+            border-radius: 5px;
+        }
+        .email:valid {
+            outline: 1px solid rgb(0, 255, 106);
+        }
+
+        .email:invalid {
+            outline: 2px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Biodata</h1>
+    <form action="">
+        <fieldset>
+            <legend>Your Personal Information:</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" placeholder="ex.Juan Dela Cruz" class="name" required>
+
+            <hr>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="Gender" class="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="Gender" class="gender">
+            <label for="female">Female</label>
+
+            <hr>
+
+            <label for="email">Email:</label>
+            <input type="email" class="email" placeholder="user@email.com ">
+        </fieldset>
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>

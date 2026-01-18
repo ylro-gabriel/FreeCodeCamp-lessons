@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Button</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #F5FBE6) ;
+        }
+        h1 {
+            text-align: center;
+        }
+        /* Center the divs */
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card {
+            background-image: linear-gradient(to bottom, #215E61) ;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #F5FBE6;
+            transition: ease 0.3s;
+        }
+        /* enlarge when hovered */
+        .card:hover {
+            transform: scale(1.5);
+        }
+        .card > button {
+            background-color: #FE7F2D;
+            padding: 5px;
+            border-radius: 5px;
+            border: #FE7F2D 2px solid;
+        }
+        /* change color of button when hovered */
+        .card > button:hover {
+            background-color: orangered;
+            border: orangered 2px solid;
+            color: #F5FBE6; 
+            
+        }
+        #sectionName {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #FE7F2D;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            display: none;
+        }
+        #sectionName:target {
+            display: block;
+        }
+        .card-nothing a{
+            text-decoration: none;
+            color: black;
+        }
+        label {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Button</h1>
+    <section class="cards-container">
+    <div class="card-nothing card">
+        <h2>Click the button</h2>
+        <button>This <a href="#sectionName">button</a> does <a href="#">nothing</a></button>
+    </div>
+    <div class="card-something card">
+        <h2>Click the button</h2>
+        <button onclick="buttonSomething()">This <span class="button-style">button</span> does something</button>
+    </div>
+    </section>
+    <section id="sectionName">
+        <label for="nameAsk">What's your name?</label>
+        <input type="text" name="name" id="nameAsk" placeholder="Your name please" required>
+        <button type="button" onclick="nameAsk()">Submit</button>
+    </section>
+
+    <script>
+        function buttonSomething() {
+            alert("You have been hacked :).");
+        }
+        function nameAsk() {
+            let nameAsk = document.getElementById("nameAsk").value;
+
+            alert("Are you actually dumb, " + nameAsk + "?");
+        }
+    </script>
+</body>
+</html>

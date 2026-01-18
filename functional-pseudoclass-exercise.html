@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu :is(.active):hover {
+            color: red;
+        }
+
+        .menu:has(.active) {
+            border-bottom: solid 1px red;
+        }
+
+        .card :where(p, h2) {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card:has(button) {
+            background: lightgreen;
+        }
+
+        li:not(.done) {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+  <a href="#">Home</a>
+  <a href="#" class="active">Blog</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="card">
+  <h2>Title hahahaha</h2>
+  <p>Description text</p>
+  <button>Read more</button>
+</section>
+
+<section class="card">
+  <h2>Another Title</h2>
+  <p>Description text</p>
+</section>
+
+<ul class="list">
+  <li class="done">Task 1</li>
+  <li>Task 2</li>
+  <li class="done">Task 3</li>
+</ul>
+</body>
+</html>
+

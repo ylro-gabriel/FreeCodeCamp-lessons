@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-image: url(data:image/png;base64,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);
+          
+        }
+
+        .layout {
+            background-color: rgb(243, 242, 236, 0.85);
+            width: 70%;
+            height: 95vh;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        nav {
+            padding: 5px;
+            padding-top: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        a:link {
+            text-decoration: none;
+            color: rgb(32, 32, 32);
+        }
+
+        a:hover {
+            background-color: rgba(241, 174, 110, 0.8);
+            outline: rgb(241, 135, 14) 2px solid;
+        }
+
+        a:focus {
+            background-color: rgba(241, 174, 110, 0.8);
+            outline: rgb(241, 135, 14) 2px solid;
+        }
+
+        .nothing-header:hover {
+            font-size: larger;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        .box {
+            width:150px;
+            margin: 10px;
+            height: 150px;
+            background-color: rgba(241, 174, 110, 0.8);
+            border-radius: 5px;
+            box-shadow: 5px 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .box:hover {
+            font-weight: bolder;
+            font-size: larger;
+            font-style: italic;
+            background-color: rgb(34, 33, 33);
+            color: rgb(210, 220, 230);
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+        }
+
+        .box-container {
+            height: 100%;
+            display: flex;
+            border-radius: 5px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+   
+    <main>
+        <div class="layout">
+             <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">FAQs</a>
+             </nav>
+            <h1>This Website is About <br><span class="nothing-header">Nothing</span></h1>
+            <div class="box-container">
+                <div class="box box-1">This</div>
+                <div class="box box-2">Is</div>
+                <div class="box box-3">True</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

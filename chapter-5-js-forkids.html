@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacting with the page</title>
+</head>
+<body>
+    <!-- <label for="nameBox">Put your name here:</label>
+    <input type="text" id="nameBox"> -->
+
+    City: <input type="text" id="cityName">
+    Country: <input type="text" id="countryName">
+    <button type="submit" onclick="getAddress()">Submit</button>
+
+    <script>
+        // let firstName;
+        // firstName = document.getElementById("nameBox").value;\
+        function getAddress() {
+            let cityName;
+            let countryName;
+
+            cityName = document.getElementById("cityName").value;
+            countryName = document.getElementById("countryName").value;
+
+            alert("So you live in " + cityName + ", " + countryName + " right?")
+            
+        }
+    </script>
+</body>
+</html>

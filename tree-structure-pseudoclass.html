@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Structure Pseudo Classes</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(40, 255, 40);
+        }
+        table,td,th {
+            border: solid 1px aliceblue;
+        }
+        th {
+            color: red;
+        }
+        :root {
+            background: black;
+            color: aliceblue;
+        }
+
+        /* Targets the nth child of a parent element */
+        /* Determine the child inside the parenthesis */
+        .first-div div:nth-child(1) {
+            background-color: blue;
+        }
+
+        /* Targets the last element first (in reverse yung kanya) */
+        .second-div div:nth-last-child(3) {
+            background-color: red;
+        }
+
+        table tbody > tr:nth-of-type(odd) {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tree Structure Pseudo Classes</h1>
+    <h2>First Part</h2>
+    <div class="first-div">
+        <div>First div</div>
+        <div>Second div</div>
+        <div>Third div</div>
+    </div>
+    <hr>
+    <h2>Second Part</h2>
+    <div class="second-div">
+        <div>Fourth div</div>
+        <div>Fifth div</div>
+        <div>Sixth div</div>
+    </div>
+    <hr>
+    <table>
+        <caption style="color: aqua;">This is a table</caption>
+        <thead>
+            <tr>
+                <th>head</th>
+                <th>body</th>
+                <th>body2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">asdasd</th>
+                <td>asasd</td>
+                <td>asasd2</td>
+            </tr>
+            <tr>
+                <th>qwerty</th>
+                <td>qwerty</td>
+                <td>qwerty2</td>
+            </tr>
+            <tr>
+                <th>uiop</th>
+                <td>uiop</td>
+                <td>uiop</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
