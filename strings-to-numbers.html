@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings to numbers</title>
+</head>
+<body>
+    <label for="firstNumber">Digit 1:</label>
+    <input type="number" name="add" id="firstNumber">
+    <p>+</p>
+    <label for="">Digit 2:</label>
+    <input type="number" name="add" id="secondNumber">
+    <br>
+    <button type="submit" onclick="total()">Submit</button>
+
+    <script>
+        // Get the values from the textbox
+        function total() {
+            let firstNumber = document.getElementById("firstNumber").value;
+            let secondNumber = document.getElementById("secondNumber").value;
+
+            // Number() converts strings to numbers in order to be computed
+            totalAdded = Number(firstNumber) + Number(secondNumber);
+
+            alert(totalAdded);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This message</title>
+</head>
+<body>
+    <p id="message">This message is...</p>
+    <button type="submit" onclick="thisMessage()">Click me!</button>
+<hr>
+
+<!-- This did not worked -->
+    <label for="yourName">What is your name? </label>
+    <input type="text" id="yourName" placeholder="your name here">
+    <button type="submit" onclick="getName()">Submit</button>
+
+    <p id="yourNameHere"></p>
+    
+
+    <script>
+        function thisMessage() {
+            document.getElementById("message").textContent = "This message was incomplete.";
+        }
+
+        //  This did not worked
+        // Get name
+        function getName() {
+            let getTheName = document.getElementById("yourName").value;
+        // Put name
+                function putName() {
+                    document.getElementById("yourNameHere").textContent = "hi" + getTheName;
+                }
+        }
+
+        
+        
+
+
+    </script>
+</body>
+</html>
