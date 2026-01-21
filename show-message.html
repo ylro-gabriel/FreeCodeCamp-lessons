@@ -23,17 +23,21 @@
             document.getElementById("message").textContent = "This message was incomplete.";
         }
 
-        //  This did not worked
-        // Get name
+        
+
+        let getTheName;
+
         function getName() {
-            let getTheName = document.getElementById("yourName").value;
-        // Put name
-                function putName() {
-                    document.getElementById("yourNameHere").textContent = "hi" + getTheName;
-                }
+            // Get name
+            
+             getTheName = document.getElementById("yourName").value;
+       
+             // Put name
+                
+            document.getElementById("yourNameHere").textContent = "hi, " + getTheName;
+
         }
 
-        
         
 
 
