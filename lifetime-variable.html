@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+        button {
+            display: block;
+            margin: 100px auto;
+            padding: 50px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <button onclick="addOneClick()">Click me</button>
+    <p id="showMe"></p>
+
+    <script>
+      
+
+        let plusOne = 0;
+
+        function addOneClick() {
+            plusOne += 1;
+
+        //show it on webpage
+             document.getElementById("showMe").textContent = "Clicked " + plusOne + " time/s!";    
+            
+        }
+
+        
+        
+    </script>
 </body>
 </html>

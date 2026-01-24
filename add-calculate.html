@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This page only knows how to add</title>
+</head>
+<body>
+    <input type="number" id="addend-one">
+    <span> + </span>
+    <input type="number" id="addend-two">
+    <span> = </span>
+    <span class="sumAnswer">
+        <p id="sum"></p>
+    </span>
+    <button onclick="getSumOf()">Add!</button>
+
+    <script>
+
+        function getSumOf() {
+
+            let addendOne = document.getElementById("addend-one").value;
+            let addendTwo = document.getElementById("addend-two").value;
+
+            document.getElementById("sum").textContent = Number(addendOne)  + Number(addendTwo);
+        }
+    </script>
+</body>
+</html>
