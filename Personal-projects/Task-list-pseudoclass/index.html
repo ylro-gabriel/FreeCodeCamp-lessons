@@ -30,15 +30,17 @@
             <input type="text" id="task-four">
         </div>
         <!-- When clicked, show the tasks that was typed inside the input -->
-        <button onclick="">List tasks</button>
+        <button onclick="getList()">List tasks</button>
     </div>
-    <div class="show" id="show">
+    <div class="show-container" id="show">
         <!-- Hide this first, after submit button -> show -->
-        <h2>Here's the list of the things you need to do:</h2>
+        <h2 id="show-list"></h2>
         <p id="show-one"></p>
         <p id="show-two"></p>
         <p id="show-three"></p>
+        <p id="show-four"></p>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
