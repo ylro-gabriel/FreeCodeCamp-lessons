@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This page only knows how to add</title>
+    <style>
+        button:focus-within {
+            background-color: yellow;
+        }
+        input[type="number"]:in-range {
+            background-color: rgb(2, 255, 2);
+        }
+        input[type="number"]:out-of-range {
+            background-color: rgb(246, 21, 21);
+        }
+    </style>
 </head>
 <body>
-    <input type="number" id="addend-one">
+    <input type="number" id="addend-one" min="2" max="7" value="2">
     <span> + </span>
-    <input type="number" id="addend-two">
+    <input type="number" id="addend-two" min="2" max="7" value="7">
     <span> = </span>
     <span class="sumAnswer">
         <p id="sum"></p>
