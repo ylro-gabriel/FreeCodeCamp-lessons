@@ -1,0 +1,45 @@
+/* styles for tha container of the colors*/
+.primary-colors, .container{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* styles for the colors */
+.color {
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    border-radius: 50% ;
+}
+
+/* style the primary colors with .primary.yellow etc., */
+.primary.yellow {
+    background-color: yellow;
+}
+
+.primary.red {
+    background-color: red;
+}
+
+.primary.blue {
+    background-color: blue;
+}
+
+/* style the secondary colors with .secondary.orange etc., */
+.secondary.orange {
+    background-color: orange;
+}
+
+.secondary.green {
+    background-color: green;
+}
+
+.secondary.violet {
+    background-color: violet;
+}
